@@ -1,10 +1,12 @@
-### TTM-server
+# TTM-server
 Timetable maker - server side
 
 ## Installation and setup
-`npm install`
+```
+npm install
+```
 
-# Setting up DB variables
+### Setting up DB variables
 Navigate to -env file and change DB_* variables to math your DB environment
 
 ## Development
