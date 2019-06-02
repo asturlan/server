@@ -7,7 +7,7 @@ npm install
 ```
 
 ### Setting up DB variables
-Navigate to -env file and change DB_* variables to math your DB environment
+Navigate to .env file and change DB_* variables to match your DB environment
 
 ## Development
 ```
