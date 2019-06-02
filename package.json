@@ -1,0 +1,19 @@
+{
+  "name": "ttmserver",
+  "version": "1.0.0",
+  "description": "TTM - server side",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asturlan/TTM-server.git"
+  },
+  "author": "Adriana Šturlan Klara Vučković",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asturlan/TTM-server/issues"
+  },
+  "homepage": "https://github.com/asturlan/TTM-server#readme"
+}
