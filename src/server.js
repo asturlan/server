@@ -27,3 +27,4 @@ con.sync().then(() => {
     })
 }).catch(err => console.log('Database connection failure'))
 
+

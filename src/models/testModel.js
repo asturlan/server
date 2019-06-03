@@ -1,5 +1,5 @@
 import Sequelize from 'sequelize'
-export default (con) => {
+module.exports = (con) => {
     var testModel = con.define('testModel', {
         userName: {
             type: Sequelize.STRING,

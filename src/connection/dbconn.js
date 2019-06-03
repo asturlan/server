@@ -17,5 +17,5 @@ const con = new Sequelize(
         }
     }
 )
-//models.push(require('../models/modelname')(con)) --> for having all created models in one place
+//models.push(require('../models/testModel')(con))
 export default con
