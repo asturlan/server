@@ -17,5 +17,5 @@ const con = new Sequelize(
         }
     }
 )
-//models.push(require('../models/testModel')(con))
+models.push(require('../models/testModel')(con))
 export default con
