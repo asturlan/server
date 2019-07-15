@@ -15,7 +15,6 @@ router.put(api.PROFESSOR, async (req, res) => {
 });
 router.get(api.PROFESSOR, async (req, res) => {
   try {
-    console.log("I'm here");
     const Profs = await prof.findAll();
     res.status(200).send(Profs);
   } catch (ex) {

@@ -9,8 +9,8 @@ const Professor = postgresClinet.define("professor", {
     allowNull: false,
     autoIncrement: true
   },
-  professor_name: { type: Sequelize.STRING, allowNull: false },
-  professor_lastname: { type: Sequelize.STRING, allowNull: false }
+  name: { type: Sequelize.STRING, allowNull: false },
+  lastname: { type: Sequelize.STRING, allowNull: false }
 });
 
 module.exports = Professor;
