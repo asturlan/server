@@ -8,5 +8,6 @@ router.use(cors);
 
 router.use("/", require("./annual"));
 router.use("/", require("./professor"));
+router.use("/", require("./year"))
 
 module.exports = router;

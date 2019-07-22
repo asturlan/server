@@ -6,10 +6,17 @@ const AnnualModel = require("../../../models/annual")
 router.get(api.ANNUAL, async (req,res)=>{
     try{
         const ANNUALs= await AnnualModel.findAll();
-        console.log(ANNUALs)
         res.status(200).json(ANNUALs)
+
     }catch(ex){
         sendErrorResponce(res,ex)
     }
+})
+router.post(api.ANNUAL,(req,res)=>{
+    AnnualModel.findOrCreate({
+        where: req.body
+    }).then(
+        res.status(200).send('Database updated')
+    )
 })
 module.exports = router;
