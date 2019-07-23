@@ -9,8 +9,16 @@ const Professor = postgresClinet.define("professor", {
     allowNull: false,
     autoIncrement: true
   },
-  name: { type: Sequelize.STRING, allowNull: false },
+  firstname: { type: Sequelize.STRING, allowNull: false },
   lastname: { type: Sequelize.STRING, allowNull: false }
 });
+
+Professor.findById = async function(id) {
+  const Professor = this;
+  const result = await Professor.findAll({
+    where: { _id: id }
+  });
+  return result;
+};
 
 module.exports = Professor;
