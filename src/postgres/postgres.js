@@ -1,5 +1,6 @@
 const Sequelize = require("sequelize");
 
+const models = []
 const con = new Sequelize(
   process.env.POSTGRES_DB,
   process.env.POSTGRES_USER,
@@ -31,5 +32,6 @@ con
   .catch(err => {
     console.error("Unable to connect to the postgres database:", err);
   });
+
 
 module.exports = con;
