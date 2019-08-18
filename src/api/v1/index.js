@@ -13,5 +13,8 @@ router.use("/", require("./level"));
 router.use("/", require("./semester"));
 router.use("/", require("./subject"));
 router.use("/", require("./year"));
+router.use("/", require("./classroom"));
+router.use("/", require("./enrollment"));
+router.use("/", require("./day"));
 
 module.exports = router;
