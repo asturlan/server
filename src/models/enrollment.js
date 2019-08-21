@@ -15,11 +15,12 @@ const Enrollment = postgresClinet.define("enrollment", {
   id_study_approach: { type: Sequelize.INTEGER, allowNull: false }
 });
 
-Enrollment.findBySubjectId = async function(id) {
+Enrollment.findBySubjectId = async function(id, approach_id) {
   const Enrol = this;
   const result = await Enrol.findAll({
     where: {
-      id_subject: id
+      id_subject: id,
+      id_study_approach: approach_id
     }
   });
   return result;
