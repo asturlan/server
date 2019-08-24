@@ -16,5 +16,6 @@ router.use("/", require("./year"));
 router.use("/", require("./classroom"));
 router.use("/", require("./enrollment"));
 router.use("/", require("./day"));
+router.use("/", require("./time"));
 
 module.exports = router;

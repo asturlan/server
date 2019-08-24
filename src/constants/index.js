@@ -8,5 +8,6 @@ module.exports = {
   YEARS: "/api/v1/years",
   CLASSROOMS: "/api/v1/classroom",
   ENROLLMENT: "/api/v1/enrollment",
-  DAY: "/api/v1/day"
+  DAY: "/api/v1/day",
+  TIME: "/api/v1/time"
 };
