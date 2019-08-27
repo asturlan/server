@@ -8,8 +8,12 @@ function validate(method){
                 check('timetable_type').isIn(['Ljeto','Zima']).withMessage("Polje 'Tip rasporeda' ne smije biti prazno")
             ]
         }
-        case 'CreateUser' : {}
-        case 'UserLogIn' : {}
+        case 'UserLogin' : {
+            return [
+                check('email').isEmail().withMessage("Potrebno je unjeti važeću e-mail adresu"),
+                check('password').not().isEmpty().withMessage("Potrebno je unjeti lozinku")
+            ]
+        }
     }
 };
 export default validate;
