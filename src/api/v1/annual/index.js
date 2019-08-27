@@ -1,11 +1,26 @@
 const router = require('express').Router()
 const api=require('../../../constants')
 const sendErrorResponce=require("../../../utils")
+
 const AnnualModel = require("../../../models/annual")
+const LecturesModel = require("../../../models/lectures")
 
 const {validationResult} = require('express-validator')
 import validation from '../../../middleware/validation'
 //import { sanitize } from 'express-validator';
+
+router.get(api.ANNUAL+"/:id/lectures",async(req,res)=>{
+    try{
+        const Lectures=await LecturesModel.findAll({
+            where : {
+                id_annual : req.params.id
+            }
+        })
+        res.status(200).json(Lectures)
+    }catch(ex){
+        sendErrorResponce(res,ex)
+    }
+})
 
 router.get(api.ANNUAL, async (req,res)=>{
     try{
