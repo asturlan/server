@@ -21,6 +21,12 @@ const Annual=postgresClient.define("annual",{
         references: 'years',
         referencesKey: '_id',
         allowNull: false
+    },
+    id_user:{
+        type: Sequelize.INTEGER,
+        references: 'users',
+        referencesKey: '_id',
+        allowNull: false
     }
 })
 module.exports=Annual;
