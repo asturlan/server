@@ -3,6 +3,7 @@ import express from "express";
 require("dotenv").config();
 require("./config/config");
 require("./postgres/postgres");
+require("./middleware/passport");
 
 const server = express();
 
