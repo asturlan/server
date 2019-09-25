@@ -18,7 +18,7 @@ const Subject = postgresClinet.define("subject", {
   id_semester: { type: Sequelize.INTEGER, allowNull: false }
 });
 
-Subject.findByIds = async function(id_study_level, id_semester) {
+Subject.findByIds = async function (id_semester, id_study_level) {
   const Subject = this;
   const result = await Subject.findAll({
     where: {
