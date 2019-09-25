@@ -18,5 +18,7 @@ router.use("/", require("./enrollment"));
 router.use("/", require("./day"));
 router.use("/", require("./time"));
 router.use("/", require("./user"));
+router.use("/", require("./slot"));
+router.use("/", require("./lecture"));
 
 module.exports = router;

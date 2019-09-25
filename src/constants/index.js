@@ -10,5 +10,7 @@ module.exports = {
   ENROLLMENT: "/api/v1/enrollment",
   DAY: "/api/v1/day",
   TIME: "/api/v1/time",
-  USER: "/api/v1/user"
+  USER: "/api/v1/user",
+  SLOT: "/api/v1/slot",
+  LECTURE: "/api/v1/lecture"
 };
